@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Selector RGB</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="bg-light d-flex flex-column min-vh-100">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+        <span class="navbar-brand fw-semibold">🎨 RGB PROFECIONAL</span>
+    </div>
+</nav>
+
+<!-- MAIN -->
+<main class="container my-5 flex-grow-1">
+    <div class="row justify-content-center">
+        <div class="col-lg-7 col-md-9">
+
+            <!-- CARD PRINCIPAL -->
+            <div class="card shadow-lg border-0">
+                <div class="card-body p-4">
+
+                    <h5 class="card-title text-center mb-4 fw-semibold">
+                        MEZCLADOR RGB
+                    </h5>
+
+                    <!-- CARD COLOR PICKER + PREVIEW -->
+<div class="card mb-4 border-0 bg-light-subtle">
+    <div class="card-body">
+        <div class="row g-3">
+
+            <!-- COLOR PICKER -->
+            <div class="col-md-6">
+                <label class="form-label fw-semibold">Color Picker</label>
+                <div class="picker-box d-flex align-items-center justify-content-center">
+                    <input type="color"
+                           id="colorPicker"
+                           value="#000000"
+                           class="color-picker-full">
+                </div>
+            </div>
+
+            <!-- PREVIEW -->
+            <div class="col-md-6">
+                <label class="form-label fw-semibold">Vista previa</label>
+                <div id="colorBox" class="color-box"></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+                    <!-- CONTROLES RGB -->
+                    <div class="card border-0">
+                        <div class="card-body">
+
+                            <!-- ROJO -->
+                            <div class="mb-3">
+                                <label class="form-label">Rojo (R)</label>
+                                <div class="d-flex align-items-center gap-3">
+                                    <input type="range" class="form-range flex-grow-1" min="0" max="255" id="red">
+                                    <input type="number" class="form-control rgb-input" min="0" max="255" id="redInput">
+                                </div>
+                            </div>
+
+                            <!-- VERDE -->
+                            <div class="mb-3">
+                                <label class="form-label">Verde (G)</label>
+                                <div class="d-flex align-items-center gap-3">
+                                    <input type="range" class="form-range flex-grow-1" min="0" max="255" id="green">
+                                    <input type="number" class="form-control rgb-input" min="0" max="255" id="greenInput">
+                                </div>
+                            </div>
+
+                            <!-- AZUL -->
+                            <div class="mb-3">
+                                <label class="form-label">Azul (B)</label>
+                                <div class="d-flex align-items-center gap-3">
+                                    <input type="range" class="form-range flex-grow-1" min="0" max="255" id="blue">
+                                    <input type="number" class="form-control rgb-input" min="0" max="255" id="blueInput">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- RESULTADOS -->
+                    <div class="card mt-4 border-0 bg-dark text-light">
+                        <div class="card-body text-center">
+                            <p class="mb-1"><strong>RGB:</strong> <span id="rgbText">rgb(0, 0, 0)</span></p>
+                            <p class="mb-0"><strong>HEX:</strong> <span id="hexText">#000000</span></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-light text-center py-3 mt-auto">
+    <div class="container">
+        <small>
+            Desarrollado con <strong>Aplicaciones Web · Bootstrap · JavaScript</strong><br>
+            © 2026 Cristian Oliver Cortez. Todos los derechos reservados.
+        </small>
+    </div>
+</footer>
+
+<script src="./assets/js/app.js"></script>
+</body>
+</html>

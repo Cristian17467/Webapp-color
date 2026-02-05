@@ -1,0 +1,27 @@
+/* Caja contenedora del color picker */
+.picker-box {
+    width: 100%;
+    height: 160px; /* MISMA altura que la vista previa */
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+/* Color picker ocupando todo el espacio */
+.color-picker-full {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* Vista previa */
+.color-box {
+    width: 100%;
+    height: 160px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    background-color: rgb(0, 0, 0);
+    transition: background-color 0.25s ease;
+}
